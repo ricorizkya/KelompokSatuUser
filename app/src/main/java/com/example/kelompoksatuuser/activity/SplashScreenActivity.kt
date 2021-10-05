@@ -20,14 +20,25 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        supportActionBar?.hide()
+
+        auth = FirebaseAuth.getInstance()
+        val user = auth.currentUser
 
         binding.imgSplash.alpha = 0f
         binding.imgSplash.animate().setDuration(1500).alpha(1f).withEndAction {
             Handler().postDelayed({
+                if (user != null) {
+                    val dashboard = Intent(this, MainActivity::class.java)
+                    startActivity(dashboard)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    finish()
+                }else {
                     val login = Intent(this, LoginActivity::class.java)
                     startActivity(login)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                     finish()
+                }
             },2000)
         }
     }

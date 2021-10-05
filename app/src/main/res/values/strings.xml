@@ -10,4 +10,13 @@
     <string name="paket">Paket</string>
     <string name="pesanan">Pesanan</string>
     <string name="profil">Profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nama_paket">Nama Paket</string>
+    <string name="domisili">Domisili</string>
+    <string name="durasi">Durasi</string>
+    <string name="rp">Rp</string>
+    <string name="_1000000">1000000</string>
+    <string name="koma">,-</string>
+    <string name="paket_terlaris">Paket Terlaris</string>
 </resources>
