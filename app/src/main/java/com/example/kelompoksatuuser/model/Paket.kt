@@ -1,6 +1,6 @@
-package com.example.kelompoksatuuser.dashboard.model
+package com.example.kelompoksatuuser.model
 
-class HotPaket {
+class Paket {
     var id: String? = null
     var namaPaket: String? = null
     var domisili: String? = null

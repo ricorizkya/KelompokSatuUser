@@ -4,20 +4,18 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.kelompoksatuuser.dashboard.model.HotPaket
+import com.example.kelompoksatuuser.model.Paket
 import com.example.kelompoksatuuser.databinding.ListHotPaketBinding
 
-class HotPaketAdapter(private val listPaket: ArrayList<HotPaket>): RecyclerView.Adapter<HotPaketAdapter.HotPaketViewHolder>() {
+class HotPaketAdapter(private val listPaket: ArrayList<Paket>): RecyclerView.Adapter<HotPaketAdapter.HotPaketViewHolder>() {
 
     inner class HotPaketViewHolder(private val binding: ListHotPaketBinding): RecyclerView.ViewHolder(binding.root) {
-        fun bind(hotPaket: HotPaket) {
+        fun bind(paket: Paket) {
             with(binding) {
-                tvNamaPaket.text = hotPaket.namaPaket
-                tvDomisiliPaket.text = hotPaket.domisili
-                tvDurasiPaket.text = hotPaket.durasi
-                tvHargaPaket.text = hotPaket.harga
+                tvNamaPaket.text = paket.namaPaket
+                tvDomisiliPaket.text = paket.domisili
                 Glide.with(itemView.context)
-                    .load(hotPaket.imagePoster)
+                    .load(paket.imagePoster)
                     .into(imgPoster)
             }
         }
@@ -33,5 +31,7 @@ class HotPaketAdapter(private val listPaket: ArrayList<HotPaket>): RecyclerView.
         holder.bind(hotPaket)
     }
 
-    override fun getItemCount(): Int = listPaket.size
+    override fun getItemCount(): Int {
+        return 5
+    }
 }

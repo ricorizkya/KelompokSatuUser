@@ -19,7 +19,7 @@ import java.lang.Exception
 class LoginActivity : AppCompatActivity() {
 
     companion object {
-        const val RC_SIGN_IN = 120
+        private const val RC_SIGN_IN = 120
     }
 
     private lateinit var binding: ActivityLoginBinding
@@ -66,10 +66,10 @@ class LoginActivity : AppCompatActivity() {
                     Log.d("LoginActivity", "firebaseAuthWithGoogle: "+account.id)
                     firebaseAuthWithGoogle(account.idToken!!)
                 }catch (e: ApiException) {
-                    Log.d("LoginActivity", "googleSignInFailed: "+e)
+                    Log.w("LoginActivity", "GoogleSignInFailed", e)
                 }
             }else {
-                Log.d("LoginActivity", exception.toString())
+                Log.w("Loginctivity", exception.toString())
             }
         }
     }
@@ -77,19 +77,19 @@ class LoginActivity : AppCompatActivity() {
     private fun firebaseAuthWithGoogle(idToken: String) {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         auth.signInWithCredential(credential)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    Log.d("LoginActivity", "signInWithCredential: Succeess")
-                    startActivity(Intent(this, MainActivity::class.java))
-                    finish()
-                }else {
-                    Log.d("LoginActivity", "signInWithCredential: Failure", task.exception)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        Log.d("LoginActivity", "signInWithCredential: Succeess")
+                        startActivity(Intent(this, MainActivity::class.java))
+                        finish()
+                    }else {
+                        Log.d("LoginActivity", "signInWithCredential: Failure", task.exception)
+                    }
                 }
-            }
     }
 
     fun btnLogin(view: View) {
-        val signIntent = googleSignInClient.signInIntent
-        startActivityForResult(signIntent, RC_SIGN_IN)
+        val signInIntent = googleSignInClient.signInIntent
+        startActivityForResult(signInIntent, RC_SIGN_IN)
     }
 }

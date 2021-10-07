@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.kelompoksatuuser.R
-import com.example.kelompoksatuuser.dashboard.DashboardFragment
+import com.example.kelompoksatuuser.dashboard.ui.DashboardFragment
 import com.example.kelompoksatuuser.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

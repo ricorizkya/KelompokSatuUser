@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "665879098237",
+    "firebase_url": "https://kelompoksatuadmin-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kelompoksatuadmin",
+    "storage_bucket": "kelompoksatuadmin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665879098237:android:6fcb9aa1b7e13104ccd214",
+        "android_client_info": {
+          "package_name": "com.example.kelompoksatuadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665879098237-j91k7uuk970n8s8g46et2jnatmo39o9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZkIjGsdh-OfyrumSkfjRTHJ1EdxpXNZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665879098237-j91k7uuk970n8s8g46et2jnatmo39o9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665879098237:android:4c7313f6bb14424eccd214",
+        "android_client_info": {
+          "package_name": "com.example.kelompoksatuuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665879098237-j91k7uuk970n8s8g46et2jnatmo39o9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZkIjGsdh-OfyrumSkfjRTHJ1EdxpXNZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665879098237-j91k7uuk970n8s8g46et2jnatmo39o9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

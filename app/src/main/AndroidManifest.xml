@@ -10,7 +10,9 @@
         android:label="@string/kelompok_satu"
         android:roundIcon="@drawable/ic_wolf_1_"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.KelompokSatuUser">
+        <activity android:name=".activity.RegisterActivity"></activity>
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.SplashScreenActivity">
             <intent-filter>

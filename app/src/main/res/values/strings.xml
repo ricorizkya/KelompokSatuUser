@@ -3,7 +3,7 @@
     <string name="kelompok">Kelompok</string>
     <string name="satu">Satu</string>
     <string name="login_menggunakan_akun_google">Login Menggunakan Akun Google</string>
-    <string name="nanti_dulu">Nanti Dulu</string>
+    <string name="nanti_dulu">Lewati untuk saat ini</string>
     <string name="kelompok_satu">Kelompok Satu</string>
     <string name="home">Home</string>
     <string name="dashboard">Dashboard</string>
@@ -19,4 +19,22 @@
     <string name="_1000000">1000000</string>
     <string name="koma">,-</string>
     <string name="paket_terlaris">Paket Terlaris</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="belum_punya_akun_daftar_disini">Belum Punya Akun? Daftar Disini</string>
+    <string name="member">Ayo bergabung bersama kami dan dapatkan pengalaman pendakian yang tak pernah terlupakan!</string>
+    <string name="nama_depan">Nama Depan</string>
+    <string name="nama_belakang">Nama Belakang</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="alamat_lengkap">Alamat Lengkap</string>
+    <string name="pilih_foto_profil_anda">Pilih Foto Profil Anda</string>
+    <string name="daftar_member">Daftar Member</string>
+    <string name="jawa_timur">Jawa Timur</string>
+    <string name="jawa_tengah">Jawa Tengah</string>
+    <string name="jawa_barat">Jawa Barat</string>
+    <string name="sumatra_barat">Sumatra Barat</string>
+    <string name="jambi">Jambi</string>
+    <string name="bali">Bali</string>
+    <string name="guide">Guide</string>
 </resources>
